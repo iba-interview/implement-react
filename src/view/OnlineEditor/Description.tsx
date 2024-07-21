@@ -7,7 +7,7 @@ const client = new StringBufferClient();
 `;
 
 const bufferCode = `
-export interface BufferClient<T>; {
+export interface BufferClient<T> {
   maxSize: number;
   buffer: { timestamp: Date, content: T }[];
 }
